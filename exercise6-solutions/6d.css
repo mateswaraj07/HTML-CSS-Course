@@ -1,0 +1,22 @@
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.model {
+  text-align: center;
+}
+
+.model-name {
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.model p {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.delivery {
+  text-decoration: underline;
+}
