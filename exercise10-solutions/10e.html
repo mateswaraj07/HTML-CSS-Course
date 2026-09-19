@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 10 Exercise</title>
+
+  <style>
+
+    .profiles {
+      width: 450px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .profile > img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 1;
+      margin-left: 15px;
+    }
+
+    .profile-info p {
+      margin: 2px 0;
+      color: gray;
+    }
+
+    .profile-info .name {
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #4285e4;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+
+   
+    .friends {
+      white-space: nowrap;
+    }
+
+    .friend-card {
+      display: inline-block;
+      vertical-align: top;
+      width: 170px;
+      margin-right: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+      padding-bottom: 10px;
+    }
+
+    .friend-card > img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    .friend-card .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 8px;
+    }
+
+    .mutual {
+      display: flex;
+      align-items: center;
+      margin: 0 8px 8px;
+    }
+
+    .mutual img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .mutual span {
+      color: gray;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="profiles">
+
+    <div class="profile">
+      <img src="cat.png">
+
+      <div class="profile-info">
+        <p class="name">oliver</p>
+        <p>the cat</p>
+        <p>Popular</p>
+      </div>
+
+      <button>Follow</button>
+    </div>
+
+
+    <div class="profile">
+      <img src="cat.png">
+
+      <div class="profile-info">
+        <p class="name">Mimi</p>
+        <p>Sleepy Cat</p>
+        <p>Popular</p>
+      </div>
+
+      <button>Follow</button>
+    </div>
+
+
+    <div class="profile">
+      <img src="cat.png">
+
+      <div class="profile-info">
+        <p class="name">Rex</p>
+        <p>Happy Bulldog</p>
+        <p>Popular</p>
+      </div>
+
+      <button>Follow</button>
+    </div>
+
+  </div>
+
+
+  <br><br>
+
+
+  <!-- Horizontal layout -->
+
+  <div class="friends">
+
+    <div class="friend-card">
+      <img src="cat.png">
+
+      <p class="name">Oliver</p>
+
+      <div class="mutual">
+        <img src="cat.png">
+        <span>2 mutual friends</span>
+      </div>
+
+      <button>Add Friend</button>
+    </div>
+
+
+    <div class="friend-card">
+      <img src="cat.png">
+
+      <p class="name">Mimi</p>
+
+      <div class="mutual">
+        <img src="cat.png">
+        <span>3 mutual friends</span>
+      </div>
+
+      <button>Add Friend</button>
+    </div>
+
+
+    <div class="friend-card">
+      <img src="cat.png">
+
+      <p class="name">Rex</p>
+
+      <div class="mutual">
+        <img src="cat.png">
+        <span>4 mutual friends</span>
+      </div>
+
+      <button>Add Friend</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

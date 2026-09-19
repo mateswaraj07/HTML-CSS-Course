@@ -1,0 +1,86 @@
+<div class="profiles">
+
+  <div class="profile">
+    <img src="cat.png">
+
+    <div class="profile-info">
+      <p class="name">oliver</p>
+      <p>the cat</p>
+      <p>Popular</p>
+    </div>
+
+    <button>Follow</button>
+  </div>
+
+
+  <div class="profile">
+    <img src="cat.png">
+
+    <div class="profile-info">
+      <p class="name">Mimi</p>
+      <p>Sleepy Cat</p>
+      <p>Popular</p>
+    </div>
+
+    <button>Follow</button>
+  </div>
+
+
+  <div class="profile">
+    <img src="cat.png">
+
+    <div class="profile-info">
+      <p class="name">Rex</p>
+      <p>Happy Bulldog</p>
+      <p>Popular</p>
+    </div>
+
+    <button>Follow</button>
+  </div>
+
+</div>
+
+<style>
+.profiles {
+  width: 450px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile > img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  margin-left: 15px;
+  flex: 1;
+}
+
+.profile-info p {
+  margin: 2px 0;
+  color: gray;
+}
+
+.profile-info .name {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile button {
+  background-color: #4285e4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  padding: 10px 16px;
+  font-size: 16px;
+}
+</style>
