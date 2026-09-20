@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>YouTube Channel Tooltip Exercise</title>
+  <style>
+    body {
+      font-family: Roboto, Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    /* Container wrapper setup */
+    .profile-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Channel Profile Picture */
+    .profile-picture {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: block;
+    }
+
+    /* Tooltip popup box (Hidden by default) */
+    .tooltip {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 12px 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+      white-space: nowrap;
+      
+      /* Smooth fade-in hover animation */
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.15s ease-in-out;
+      z-index: 100;
+    }
+
+    /* Picture inside the tooltip popup */
+    .tooltip-picture {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 14px;
+    }
+
+    /* Info layout inside tooltip */
+    .tooltip-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tooltip-name {
+      font-weight: bold;
+      font-size: 16px;
+      color: #0f0f0f;
+      margin-bottom: 2px;
+    }
+
+    .tooltip-stats {
+      font-size: 14px;
+      color: #606060;
+    }
+
+    /* Hover effect: reveals the tooltip */
+    .profile-container:hover .tooltip {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Channel Picture with Tooltip Hover -->
+  <div class="profile-container">
+    <img class="profile-picture" src="https://picsum.photos/id/64/100/100" alt="Channel Picture">
+    
+    <!-- Tooltip Popup -->
+    <div class="tooltip">
+      <img class="tooltip-picture" src="https://picsum.photos/id/64/100/100" alt="Channel Picture">
+      <div class="tooltip-info">
+        <div class="tooltip-name">Markiplier</div>
+        <div class="tooltip-stats">30M subscribers</div>
+      </div>
+    </div>
+  </div>
+  <div class="profile-container">
+    <img class="profile-picture" src="https://picsum.photos/id/64/100/100" alt="Channel Picture">
+    
+    <!-- Tooltip Popup -->
+    <div class="tooltip">
+      <img class="tooltip-picture" src="https://picsum.photos/id/64/100/100" alt="Channel Picture">
+      <div class="tooltip-info">
+        <div class="tooltip-name">Markiplier</div>
+        <div class="tooltip-stats">30M subscribers</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

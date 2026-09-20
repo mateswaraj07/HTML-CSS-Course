@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      width: 300px;
+      height: 80px;
+    }
+
+    .left {
+      width: 100px;
+      background-color: lightpink;
+    }
+
+    .right {
+      width: 200px;
+      background-color: lightblue;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .rows {
+      display: flex;
+      flex-direction: column;
+    }
+    .item{
+        background-color: black;
+        color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="left"></div>
+
+    <div class="right">
+      <div class="rows">
+        <div>row1</div>
+        <div class="item">row2</div>
+      </div>
+
+      <div class="item">row2</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

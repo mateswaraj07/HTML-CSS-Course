@@ -1,0 +1,78 @@
+/* Base styles for the sidebar */
+.sidebar {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+/* Base styles for sidebar links */
+.sidebar-link {
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: #e5e5e5;
+}
+
+.sidebar-link div {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* ===================================================
+   1. COLLAPSED SIDEBAR (max-width: 1200px)
+   =================================================== */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 72px;
+  }
+
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 6px;
+  }
+
+  .sidebar-link div {
+    font-size: 10px;
+  }
+}
+
+/* ===================================================
+   2. EXPANDED SIDEBAR (min-width: 1200.1px)
+   =================================================== */
+@media (min-width: 1200.1px) {
+  .sidebar {
+    width: 240px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .sidebar-link {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    border-radius: 10px;
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-right: 24px;
+  }
+
+  .sidebar-link div {
+    font-size: 14px;
+  }
+}

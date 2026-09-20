@@ -1,0 +1,39 @@
+.email {
+  width: 450px;
+  padding: 15px;
+  border: 1px solid lightgray;
+}
+
+.inbox {
+  margin-bottom: 25px;
+  color: gray;
+}
+
+.email-row {
+  display: flex;
+  align-items: center;
+}
+
+.email-row img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.email-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-content p {
+  margin: 5px 0 0;
+  color: gray;
+}
